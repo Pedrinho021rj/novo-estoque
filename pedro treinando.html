@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereçamento de Estoque</title>
+    <link rel="stylesheet" href="C:\Users\Pedro\endere-amento-de-estoque\pedro treinando style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo no canto superior esquerdo -->
+            <div class="logo">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMunO14MS2acqzleGN6tReewRE1A9RCIPgHZk91bkxoO0EIlWqkfVIyUPEsxizJMyMKyfLeDW4mNFWjthnjFOqz9ZvVPV7lurjn-m3uOVELTaFojtlM8lS84EhNhGiw7xxB_6L4kE3si2tEp5AlKom6TA=w500-h500-s-no-gm?authuser=0" alt="Logo da Empresa">
+            </div>
+            <h1>Endereçamento de Estoque</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#estoque">Estoque</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Ícones de login e contato no canto superior direito -->
+            <div class="header-icons">
+                <a href="#" class="icon-link" title="Login">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#contato" class="icon-link" title="Contato">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Sistema de Endereçamento de Estoque</h2>
+            <p>Endereçamento da Empresa Refrescante Sabor</p>
+            <a href="#estoque" class="btn">Ver Estoque</a>
+        </div>
+    </section>
+
+    <section id="estoque" class="estoque">
+        <div class="container">
+            <h2>Estoque</h2>
+            <div class="grid">
+                <!-- Produto "Refrescante Sabor 250ML" -->
+                <div class="card" data-product-id="1">
+                    <h3>Refrescante Sabor 250ML</h3>
+                    <p>Galpão T5, Rua 01, Coluna 3, Nível 1</p>
+                    <p>Quantidade: 24</p>
+                    <p>Localização: Galpão T5</p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para detalhes do produto -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalProductName"></h2>
+            <p id="modalProductDescription"></p>
+            <p id="modalProductQuantity"></p>
+            <p id="modalProductLocation"></p>
+        </div>
+    </div>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Endereçamento de Estoque. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="C:\Users\Pedro\endere-amento-de-estoque\pedro treinando script.js"></script>
+</body>
+</html>
